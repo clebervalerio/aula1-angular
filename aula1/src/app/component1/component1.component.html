@@ -1,0 +1,23 @@
+<!-- Técnica de interpolação -->
+<!-- exibir o valor dela -->
+<!--  -->
+<h1>{{texto}}</h1>
+
+<!-- Técnica de interpolação com objeto -->
+<!-- suponha que vc tem um obejtoe  quer exibir ele -->
+<!-- exibe um objeto do tipo Objeto poisnnão hove especificação de caracteristica 
+vc quer especificar deste objeto-->
+<p>{{pessoa}}</p>    
+
+<!-- alternativa pessoa.nome ou pessoa.idade, vai exibir apenas o nome dela -->
+<!-- exibe um objeto referenciado com um objeto -->
+<!-- exibe um objeto referenciado a variavel -->
+<p>{{pessoa.nome}}</p>  
+
+<!-- tecnica dos pipes
+Server para vc modificar alguma informação,
+pode ser uma variável ou pode ser um objeto-->
+<!-- simbolo do pipe '|'  mais o JSON  ( verifique no componente se o import tem o commonModule)-->
+<!--  ideia do pai é fazer modificaçãoes  -->
+
+<p>{{pessoa | json}}</p>

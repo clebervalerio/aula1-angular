@@ -1,0 +1,24 @@
+<!-- Tipos de Bind -->
+<!-- PROPERTY BIND    : BASICAMENTE A TROCA DE INFORMAÇÕES DO ARQUIVO TS PARA O HTML E REVERSO
+    ()   -> HTML CHAMA UMA FUNÇÃO/VARIÁVEL NO ARQUIVO TS  ---  ENVIAR INFORMAÇÕES DO HTML PARA O TYPE SCRIPT  TS: PARA FAZER UMA FUNÇÃO DE CLICK , CHANGE, TECLADO
+    []   -> PEGA A INFORMAÇÃO DO ARQUIVO TS E ENVIA PARA O ARQUIVO HTML
+    [()] -> VIA DE MÃO DUPLA
+-->
+<!-- 
+
+    É PRECISO SABER QUAL TIPO DE BIND  A SUA  FUNÇÃO  TRABALHA
+
+    O IF TRABALHA APENAS COM [ngIF]
+
+    se for trabalhar com ngModel  [(ngModel)]
+    função de teclado ou de mouse  ( )
+ -->
+
+               <!-- IF -->
+
+ <!-- aqui a regra de negócio fica aqui dentro logo após o p -->
+ <!-- pode ser trabalhado dentro de qualquer estrutura html pode ser form, table, p , img, alerta, ou ocultar atraves do boolean exibir ou ocultar -->
+ 
+ <!-- um botão e a função do botão fica entre () = "" atribuido a função -->
+ <button (click)="visibilidadeTexto()">clique aqui</button>
+ <P *ngIf="exibirTexto">Aprendendo a trabalhar com ngIf</P>
