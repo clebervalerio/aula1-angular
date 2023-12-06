@@ -22,3 +22,29 @@
  <!-- um botão e a função do botão fica entre () = "" atribuido a função -->
  <button (click)="visibilidadeTexto()">clique aqui</button>
  <P *ngIf="exibirTexto">Aprendendo a trabalhar com ngIf</P>
+
+ <!-- template -->
+ <!--  é como se fosse um componente filho com uma regra 
+para parecer quando for solicitado -->
+ <ng-template [ngIf]="exibirTexto">
+    <p>texto dentro do template...</p>
+ </ng-template>
+ <!-- For -->
+ <ul *ngFor="let nome of nomes">
+    <li>{{nomes}}</li>
+ </ul>
+
+ <!-- SWITCH -->
+ <select [(ngModel)]="linguagem">
+    <option value="">Selecionar alguma linguagem</option>
+    <option value="C#">C#</option>
+    <option value="Java">java</option>
+    <option value="Python">Python</option>
+ </select>
+
+ <ul [ngSwitch]="linguagem">
+    <li *ngSwitchCase="'C#'">C# é uma linguagem desenvolvida pela Microsoft</li>
+    <li *ngSwitchCase="'Java'">java é uma linguagem que pertence a Oracle</li>
+    <li *ngSwitchCase="'Python'">Python é uma linguagem muito rápida</li>
+    <li *ngSwitchCase="''">Informe sua linguagem</li>
+ </ul>
