@@ -8,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrl: './component3.component.css'
 })
 export class Component3Component {
+  //Váriavel de media
+  media:number = 8;
+
+  //váriavel de linguagem
+  linguagem:string ='CSS'
 
 }
