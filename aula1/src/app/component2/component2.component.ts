@@ -23,7 +23,7 @@ export class Component2Component {
     nomes:string[]=['Larissa','ricardo','Cleber','Viviane'];
     
     
-    //linguagem de progrmação
+    //linguagem de programação
       linguagem:string = '';
       // linguagem:string = 'c#';
     
