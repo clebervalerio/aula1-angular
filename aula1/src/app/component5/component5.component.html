@@ -1,1 +1,11 @@
 <p>component5 works!</p>
+<p>Rective forms e sua estrutura</p>
+<p>neste formato json ele ja concatena automatico e 
+    daqui vc ja pode fazer uma requisição.</p>
+<h1>{{ formulario.value | json }}</h1>
+
+<form [formGroup]="formulario" (submit)="enviar()"> <!-- linka com o ts-->
+    <input type="email"    formControlName="email" placeholder="E-mail">
+    <input type="password" formControlName="senha" placeholder="Senha">
+    <input type="submit" value="Enviar">
+</form>

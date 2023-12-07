@@ -12,6 +12,10 @@ export class Component3Component {
   media:number = 8;
 
   //váriavel de linguagem
-  linguagem:string ='CSS'
+  linguagem:string ='CSS';
+
+  //vetor de nomes
+  nomes:string[] = [];
+  
 
 }

@@ -1,1 +1,18 @@
-<p>component4 works!</p>
+
+<p>Com a digitação na caixa conseguimos exibir o texto em tempo real</p>
+<h1>{{texto}}</h1>
+<input type="text" [(ngModel)]="texto">
+
+<h1>{{email}} - {{senha}}</h1>
+<p>Com a definição no name os caracteres digitados são exibidos, esperiente!</p>
+
+<form>
+    <input type="email"    name="email" [(ngModel)]="email">
+    <input type="password" name="senha" [(ngModel)]="senha">
+</form>
+
+<p>Sem a definição do name não é exibido os caracteres escritos, esperimente!</p>
+<form>
+    <input type="email"    name="" [(ngModel)]="email">
+    <input type="password" name="" [(ngModel)]="senha">
+</form>

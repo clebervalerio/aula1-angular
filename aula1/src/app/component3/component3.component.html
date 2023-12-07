@@ -1,7 +1,7 @@
 <!-- Condicional -->
 @if (media >=7) {
     <p>Aprovado(a)</p>
-}@else if (MEDIA >= 5) {
+}@else if (media >= 5) {
     <P>Em exame</P>
 }@else {
     <p>Reprovado(a)</p>
@@ -9,10 +9,16 @@
 
 <!-- Escolha -->
 @switch (linguagem) {
-    @case ('HTML') {
-        <p>Linguagem de estruturação para site.</p>
-    }
-    @case ('CSS') {
-        <p>Linguagem de estilização de sites</p>
-    }
+    @case ('HTML') {<p>Linguagem de estruturação para site.</p> }
+    @case ('CSS')  {<p>Linguagem de estilização de sites</p>}
+    @case ('javascript') {<p>Linguagem de programação</p>}
+    @default {<p>Linguagem não encontrada</p> }
+}
+
+<!-- laço de repetição -->
+
+@for (nome of nomes; track $index) {
+    <p>{{$index}} - {{nome}}</p>
+}@empty {
+    <p>O vetor de nomes esta vazio.</p>
 }
